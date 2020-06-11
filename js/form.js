@@ -5,9 +5,14 @@ $(document).ready(function() {
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: "https://meleshko90v.github.io/bootstrap_form/mail.php", //Change
+            url: "mail.php", //Change
             data: th.serialize()
         }).done(function() {
+            if (true) {
+                swal("Дякуємо за Вашу заявку!", "Найближчим часом з Вами зв'яжеться наш адміністратор", "success");
+            } else {
+                return swal("Сталася помилка!", "повторіть будь ласка заявку!", "error");
+            }
             // alert("Thank you!");
             setTimeout(function() {
                 // Done Functions

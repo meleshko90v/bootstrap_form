@@ -289,7 +289,7 @@
 <!-- Contact form -->
 <div class="contact-form" id="contact">
   <div class="container">
-    <form>
+    <form action="mail.php" method="post">
 
       <!-- Hidden Required Fields -->
       <input type="hidden" name="project_name" value="Bootstrap">
@@ -309,6 +309,9 @@
             <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
           </div>
           <div class="form-group">
+            <input type="tel" class="form-control form-control-lg" placeholder="068 251 38 88" name="phone">
+          </div>
+          <div class="form-group">
          <textarea name="message" class="form-control form-control-lg">
 
          </textarea>
@@ -318,13 +321,13 @@
       </div>
     </form>
 
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<!--    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           Дякуємо за заявку!
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </div>
 
